@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@200;800&family=Prata&display=swap');
+html,
+* {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0 auto;
+}
+
+body {
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    background: #000;
+}
+
+#navbar {
+    top: -50%;
+    background: transparent;
+    width: 100%;
+    transition: top 0.3s;
+    left: 60%;
+}
+
+#navbar a,
+.PRIME-title-btn {
+    float: left;
+    display: block;
+    color: rgba(151, 142, 24, 0.931);
+    text-align: center;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 200;
+    text-shadow: 1px 1px 1px #000;
+    font-size: 12PX;
+    padding: 8px;
+    margin-right: 5px;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(155, 146, 25, 0.935);
+}
+
+#navbar a:hover,
+.PRIME-title-btn:hover {
+    transform: scale(1.2);
+    color: black;
+    border-bottom: 1px solid black;
+    text-shadow: 1px 1px 1px #FFF;
+    transition: bottom .3s;
+}
+
+.header {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 200;
+    font-size: 13vw;
+    color: transparent;
+    text-shadow: 2px 2px 4px #fff;
+    width: 100%;
+    letter-spacing: 2px;
+    animation: 3s appea3r linear forwards;
+    transition: .3s;
+    bottom: 0;
+    right: 0%;
+}
+
+.header span {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    color: #111;
+    letter-spacing: 5px;
+}
+
+.header:hover {
+    color: rgba(147, 139, 27, 0.98);
+    text-shadow: 5px 5px 7px rgba(255, 255, 255, 0.851);
+    transition: .7s;
+}
+
+.header span:hover {
+    transform: scaleX(none);
+    text-shadow: 2px 2px 4px #fff;
+}
+
+#carousel-body {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-position: center;
+    background-attachment: sticky;
+    background-repeat: no-repeat;
+    margin-bottom: 10vh;
+}
+
+@keyframes bottom {
+    0% {
+        bottom: 0;
+        opacity: .5;
+    }
+    50% {
+        bottom: 25%;
+        opacity: .3;
+    }
+    100% {
+        bottom: 50%;
+        opacity: .1;
+    }
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes top {
+    0% {
+        top: 0;
+        opacity: .1;
+    }
+    50% {
+        top: 25%;
+        opacity: .5;
+    }
+    100% {
+        top: 50%;
+        opacity: 1;
+    }
+}
+
+@keyframes right {
+    0% {
+        opacity: 1;
+        right: 0;
+    }
+    50% {
+        opacity: .5;
+        right: 50%;
+    }
+    100% {
+        opacity: 0;
+        right: 100%;
+    }
+}
+
+@keyframes left {
+    0% {
+        opacity: .5;
+        left: 0;
+    }
+    50% {
+        opacity: .3;
+        left: 50%;
+    }
+    100% {
+        opacity: .1;
+        left: 100%;
+    }
+}
+
+video {
+    height: 120vh;
+    width: 100vw;
+    opacity: .5;
+    background: #000;
+    object-fit: contain;
+}
+
+.video1 {
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: 0;
+    animation: bottom 7s linear infinite;
+    transition: 0.3s;
+}
+
+.video2 {
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.478);
+    opacity: 0;
+    animation: top linear infinite 7s;
+    animation-delay: 3s;
+    transition: 0.5s;
+}
+
+.video3 {
+    top: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.476);
+    opacity: 0;
+    animation: left linear infinite 5s;
+    animation-delay: 4s;
+    transition: 0.5s;
+}
+
+.video4 {
+    top: 0;
+    left: 0;
+    background: rgba(5, 0, 0, 0.444);
+    opacity: 0;
+    animation: right linear infinite 7s;
+    animation-delay: 5s;
+    transition: 0.5s;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+#join input,
+#join textarea {
+    max-width: 50%;
+    height: auto;
+}
+
+#membership-body {
+    padding: 2px 0;
+    overflow: visible;
+}
+
+@media only screen and (max-width: 720px) {
+    #membership-body div {
+        max-width: 100%;
+        min-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .card-body .list-unstyled {
+        display: none;
+    }
+}
+
+#workout-body {
+    margin-top: 20%;
+}
+
+#workout-body:after {
+    content: '';
+    min-width: 108%;
+    height: 89vh;
+    background: inherit;
+    top: 7%;
+    left: -4%;
+    transform-origin: right-top;
+    transform: skewY(350deg);
+    background: #888;
+    overflow: hidden;
+}
+
+#find-us {
+    margin-top: 10%;
+}
+
+.location {
+    margin-top: 5%;
+    font-size: .85em;
+    list-style: none;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    width: 30%;
+    font-size: 1.5em;
+    padding: 5px;
+    bottom: 0%;
+}
+
+#social-media {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+    width: auto;
+}
+
+#social-media li {
+    margin-right: 15px;
+}
