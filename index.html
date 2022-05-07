@@ -6,12 +6,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="stylesheet.css">
-    <link rel="stylesheet" href="CUSTOM.SCSS">
-    <script src="./script.js"></script>
+    <link rel="stylesheet" href="/css/stylesheet.css">
+    <script src="/script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./shine.scss">
 
     <title>PRIME FITNESS</title>
 </head>
@@ -20,16 +18,12 @@
     <main class="dark-mode">
         <header class="dark-mode">
             <!-----------------------------------------------NAVBAR=-------------------------------------------------------------->
-            <nav class="navbar navbar-expand-lg id=" navbar ">
+            <nav class="navbar navbar-expand-lg" id="navbar">
                 <a href="./images/logo-removebg-preview.png " class="navbar-brand "></a>
                 <a class="nav-item " href="#home ">PRIME Home</a>
                 <a class="nav-item " href="#memberships "> PRIME Deals</a>
                 <a class="nav-item " href="#about ">About PRIME</a>
                 <a class="nav-item " href="#contact ">Contact PRIME</a>
-                <a class="nav-item " href="myModal " data-toggle="modal " data-target="myModal ">FREE PRIME PASS!</a>
-                <a class="nav-item " onclick="darkMode() ">Dark Mode</a>
-
-
             </nav>
 
 
@@ -37,7 +31,7 @@
 
             <!-- Modal -->
             <div id="myModal " class="modal fade " role="dialog ">
-                <div class="modal-dialog ">  
+                <div class="modal-dialog ">
 
                     <!-- Modal content-->
                     <div class="modal-content ">
@@ -85,232 +79,250 @@
 
                 </div>
             </div>
+            <h1 class="header ">PRIME<span>FITNESS</span></h1>
+
+        </header>
         </header>
 
 
+
+
         <!-----------------------------------------CAROUSEL------------------------------------------------------------------->
-        <section id="carousel-body ">
-            <h1 class="header shine ">PRIME<span>FITNESS</span></h1>
-            <div id="carousel ">
+        <div class="container">
+            <div id="myCarouselOne" class="carousel slide carousel-fade" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarouselOne" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarouselOne" data-slide-to="1" class="active"></li>
+                    <li data-target="#myCarouselOne" data-slide-to="2" class="active"></li>
+                    <li data-target="#myCarouselOne" data-slide-to="3" class="active"></li>
 
-                <div class="video1 block ">
-                    <video autoplay muted loop>
-                <source src="./images/gymvid10.mp4 " type="video/mp4 ">
-           </video>
-                </div>
-                <div class="video2 block ">
-                    <video class=" " autoplay muted loop>
-                <source src="./images/gymvid9.mp4 " type="video/mp4 ">
-           </video>
-                </div>
-                <div class="video3 block ">
-                    <video class=" " autoplay muted loop>
-                <source src="./images/gymvid8.mp4 " type="video/mp4 ">
-           </video>
-                </div>
-                <div class="video4 block ">
-                    <video class=" " autoplay muted loop>
-                <source src="./images/gymvid2.mp4 " type="video/mp4 ">
-           </video>
-                </div>
-            </div>
-        </section>
-        <!----------------------------------------MEMBERSHIPS------------------------------------------------------------->
-        <section id="membership-body " class="dark-mode ">
-            <h1 id="memberships " class="chrome ">MEMBERSHIPS</h1>
+                </ol>
 
-            <div class="row dark-mode ">
-                <div class=" card dark-mode col-sm-6 ">
-                    <div class="card-header ">
-                        <h4>Monthly</h4>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+
+                    <div class="carousel-item active ">
+                        <video autoplay muted loop playbackRate="0.5" class="img-fluid vid1" src="/videos/gymvid10.mp4"></video>
                     </div>
-                    <div class="card-body dark-mode ">
-                        <h1 class="card-title pricing-card-title ">$75</h1>
-                        <ul class="list-unstyled mt-3 mb-4 ">
-                            <li>Freedom and Flexibility </li>
-                            <li>Virtual Training</li>
-                            <li>Group Training</li>
-                            <li>On-Demand Training</li>
-                            <li>Weight Loss Programs</li>
-                            <li>Nutritional and Equipment Discounts</li>
-                            <li>Child Care Options</li>
-                            <li>24 hour Club Access</li>
-                        </ul>
-                        <button type="button " class="btn btn-lg btn-block btn-primary ">Get Started</button>
+                    <div class="carousel-item active">
+                        <video autoplay muted loop playbackRate="0.5" class="img-fluid vid2" src="/videos/gymvid2.mp4"></video>
                     </div>
-                </div>
-                <div class="card dark-mode col-sm-6 ">
-                    <div class="card-header ">
-                        <h4>Monthly</h4>
+                    <div class="carousel-item active">
+                        <video autoplay muted loop playbackRate="0.5" class="img-fluid vid3" src="/videos/gymvid8.mp4"></video>
                     </div>
-                    <div class="card-body dark-mode ">
-                        <h1 class="card-title pricing-card-title ">$75</h1>
-                        <ul class="list-unstyled mt-3 mb-4 ">
-                            <li>Freedom and Flexibility </li>
-                            <li>Virtual Training</li>
-                            <li>Group Training</li>
-                            <li>On-Demand Training</li>
-                            <li>Weight Loss Programs</li>
-                            <li>Nutritional and Equipment Discounts</li>
-                            <li>Child Care Options</li>
-                            <li>24 hour Club Access</li>
-                        </ul>
-                        <button type="button " class="btn btn-lg btn-block btn-primary ">Get Started</button>
+                    <div class="carousel-item active">
+                        <video autoplay muted loop playbackRate="0.5" class="img-fluid vid4" src="/videos/gymvid9.mp4"></video>
                     </div>
                 </div>
             </div>
-        </section>
+            <!----------------------------------------MEMBERSHIPS------------------------------------------------------------->
+            <section id="membership-body " class="dark-mode ">
+                <h1 id="memberships " class="chrome ">MEMBERSHIPS</h1>
 
-        <section id="workout-body ">
-            <h1>WORKOUTS</h1>
-            <div class="row ">
-                <div class="col-sm ">
-                    <div id="accordion w-50 card-deck mt-5 ">
+                <div class=" membership-content row dark-mode ">
+                    <div class=" card dark-mode col-sm-6 ">
+                        <div class="card-header ">
+                            <h4>Monthly</h4>
+                        </div>
                         <div class="card-body dark-mode ">
-                            <div class="card-header " id="headingOne ">
-                                <h5 class="mb-3 ">
-                                    <button class="btn warning-outline collapsed btn-link " data-toggle="collapse " data-target="#collapseOne " aria-expanded="false " aria-controls="collapseOne ">
+                            <h1 class="card-title pricing-card-title ">$75</h1>
+                            <ul class="list-unstyled mt-3 mb-4 ">
+                                <li>Freedom and Flexibility </li>
+                                <li>Virtual Training</li>
+                                <li>Group Training</li>
+                                <li>On-Demand Training</li>
+                                <li>Weight Loss Programs</li>
+                                <li>Nutritional and Equipment Discounts</li>
+                                <li>Child Care Options</li>
+                                <li>24 hour Club Access</li>
+                            </ul>
+                            <button type="button " class="btn btn-lg btn-block btn-primary ">Get Started</button>
+                        </div>
+                    </div>
+                    <div class="card dark-mode col-sm-6 ">
+                        <div class="card-header ">
+                            <h4>Monthly</h4>
+                        </div>
+                        <div class="card-body dark-mode ">
+                            <h1 class="card-title pricing-card-title ">$75</h1>
+                            <ul class="list-unstyled mt-3 mb-4 ">
+                                <li>Freedom and Flexibility </li>
+                                <li>Virtual Training</li>
+                                <li>Group Training</li>
+                                <li>On-Demand Training</li>
+                                <li>Weight Loss Programs</li>
+                                <li>Nutritional and Equipment Discounts</li>
+                                <li>Child Care Options</li>
+                                <li>24 hour Club Access</li>
+                            </ul>
+                            <button type="button " class="btn btn-lg btn-block btn-primary ">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="workout-body ">
+                <h1>WORKOUTS</h1>
+                <div class="row ">
+                    <div class="col-sm ">
+                        <div id="accordion w-50 card-deck mt-5 ">
+                            <div class="card-body dark-mode ">
+                                <div class="card-header " id="headingOne ">
+                                    <h5 class="mb-3 ">
+                                        <button class="btn warning-outline collapsed btn-link " data-toggle="collapse " data-target="#collapseOne " aria-expanded="false " aria-controls="collapseOne ">
                                     Back Workout
                                   </button>
-                                </h5>
-                            </div>
+                                    </h5>
+                                </div>
 
-                            <div id="collapseOne " class="collapse row " aria-labelledby="headingOne " data-parent="#accordion ">
-                                <div class="card-body row col-6 col-sm-4 dark-mode ">
-                                    <iframe class="img-responsive " style="width:70% " alt="video " src="https://www.youtube.com/embed/op9kVnSso6Q "></iframe>
-                                    <p>The Dead Lift</p>
+                                <div id="collapseOne " class="collapse row " aria-labelledby="headingOne " data-parent="#accordion ">
+                                    <div class="card-body row col-6 col-sm-4 dark-mode ">
+                                        <iframe class="img-responsive " style="width:70% " alt="video " src="https://www.youtube.com/embed/op9kVnSso6Q "></iframe>
+                                        <p>The Dead Lift</p>
 
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="card dark-mode ">
-                            <div class="card-header " id="headingTwo ">
-                                <h5 class="mb-3 ">
-                                    <button class="btn btn-link warning-outline collapsed " data-toggle="collapse " data-target="#collapseTwo " aria-expanded="false " aria-controls="collapseTwo ">
+                            <div class="card dark-mode ">
+                                <div class="card-header " id="headingTwo ">
+                                    <h5 class="mb-3 ">
+                                        <button class="btn btn-link warning-outline collapsed " data-toggle="collapse " data-target="#collapseTwo " aria-expanded="false " aria-controls="collapseTwo ">
                                     Chest Workout
                                   </button>
-                                </h5>
-                            </div>
-                            <div id="collapseTwo " class="collapse row " aria-labelledby="headingTwo " data-parent="#accordion ">
-                                <div class="card-body row col-6 col-sm-4 dark-mode ">
-                                    <iframe class="img-responsive " style="width:70% " alt="video " src="https://www.youtube.com/embed/SCVCLChPQFY "></iframe>
-                                    <p>The Chest Press</p>
+                                    </h5>
+                                </div>
+                                <div id="collapseTwo " class="collapse row " aria-labelledby="headingTwo " data-parent="#accordion ">
+                                    <div class="card-body row col-6 col-sm-4 dark-mode ">
+                                        <iframe class="img-responsive " style="width:70% " alt="video " src="https://www.youtube.com/embed/SCVCLChPQFY "></iframe>
+                                        <p>The Chest Press</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="card dark-mode ">
-                            <div class="card-header " id="headingThree ">
-                                <h5 class="mb-3 ">
-                                    <button class="btn btn-link warning-outline collapsed " data-toggle="collapse " data-target="#collapseThree " aria-expanded="false " aria-controls="collapseThree ">
+                            <div class="card dark-mode ">
+                                <div class="card-header " id="headingThree ">
+                                    <h5 class="mb-3 ">
+                                        <button class="btn btn-link warning-outline collapsed " data-toggle="collapse " data-target="#collapseThree " aria-expanded="false " aria-controls="collapseThree ">
                                     Leg Workout
                                 </button>
-                                </h5>
-                            </div>
-                            <div id="collapseThree " class="collapse " aria-labelledby="headingThree " data-parent="#accordion ">
-                                <div class="card-body row col-sm-4 dark-mode ">
-                                    <iframe class="img-responsive " style="width:70% " alt="video " src="https://www.youtube.com/embed/SCVCLChPQFY "></iframe>
-                                    <p>The Back Squat</p>
+                                    </h5>
+                                </div>
+                                <div id="collapseThree " class="collapse " aria-labelledby="headingThree " data-parent="#accordion ">
+                                    <div class="card-body row col-sm-4 dark-mode ">
+                                        <iframe class="img-responsive " style="width:70% " alt="video " src="https://www.youtube.com/embed/SCVCLChPQFY "></iframe>
+                                        <p>The Back Squat</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm ">
-                    <div id="accordion w-50 card-deck mt-5 ">
-                        <div class="card-body dark-mode ">
-                            <div class="card-header " id="headingFour ">
-                                <h5 class="mb-3 ">
-                                    <button class="btn warning-outline collapsed btn-link " data-toggle="collapse " data-target="#collapseFour " aria-expanded="false " aria-controls="collapseFour ">
+                    <div class="col-sm ">
+                        <div id="accordion w-50 card-deck mt-5 ">
+                            <div class="card-body dark-mode ">
+                                <div class="card-header " id="headingFour ">
+                                    <h5 class="mb-3 ">
+                                        <button class="btn warning-outline collapsed btn-link " data-toggle="collapse " data-target="#collapseFour " aria-expanded="false " aria-controls="collapseFour ">
                                         Back Workout
                                       </button>
-                                </h5>
-                            </div>
+                                    </h5>
+                                </div>
 
-                            <div id="collapseFour " class="collapse row " aria-labelledby="headingFour " data-parent="#accordion ">
-                                <div class="card-body row col-6 col-sm-4 dark-mode ">
-                                    <iframe class="img-responsive " style="width:70% " alt="video " src="https://www.youtube.com/embed/op9kVnSso6Q "></iframe>
-                                    <p>The Dead Lift</p>
+                                <div id="collapseFour " class="collapse row " aria-labelledby="headingFour " data-parent="#accordion ">
+                                    <div class="card-body row col-6 col-sm-4 dark-mode ">
+                                        <iframe class="img-responsive " style="width:70% " alt="video " src="https://www.youtube.com/embed/op9kVnSso6Q "></iframe>
+                                        <p>The Dead Lift</p>
 
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="card dark-mode ">
-                            <div class="card-header " id="headingFive ">
-                                <h5 class="mb-3 ">
-                                    <button class="btn btn-link warning-outline collapsed " data-toggle="collapse " data-target="#collapseFive " aria-expanded="false " aria-controls="collapseFive ">
+                            <div class="card dark-mode ">
+                                <div class="card-header " id="headingFive ">
+                                    <h5 class="mb-3 ">
+                                        <button class="btn btn-link warning-outline collapsed " data-toggle="collapse " data-target="#collapseFive " aria-expanded="false " aria-controls="collapseFive ">
                                         Chest Workout
                                       </button>
-                                </h5>
-                            </div>
-                            <div id="collapseFive " class="collapse row " aria-labelledby="headingFive " data-parent="#accordion ">
-                                <div class="card-body row col-6 col-sm-4 dark-mode ">
-                                    <iframe class="img-responsive " style="width:70% " alt="video " src="https://www.youtube.com/embed/SCVCLChPQFY "></iframe>
-                                    <p>The Chest Press</p>
+                                    </h5>
+                                </div>
+                                <div id="collapseFive " class="collapse row " aria-labelledby="headingFive " data-parent="#accordion ">
+                                    <div class="card-body row col-6 col-sm-4 dark-mode ">
+                                        <iframe class="img-responsive " style="width:70% " alt="video " src="https://www.youtube.com/embed/SCVCLChPQFY "></iframe>
+                                        <p>The Chest Press</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="card dark-mode ">
-                            <div class="card-header " id="headingSix ">
-                                <h5 class="mb-3 ">
-                                    <button class="btn btn-link warning-outline collapsed " data-toggle="collapse " data-target="#collapseSix " aria-expanded="false " aria-controls="collapseSix ">
+                            <div class="card dark-mode ">
+                                <div class="card-header " id="headingSix ">
+                                    <h5 class="mb-3 ">
+                                        <button class="btn btn-link warning-outline collapsed " data-toggle="collapse " data-target="#collapseSix " aria-expanded="false " aria-controls="collapseSix ">
                                         Leg Workout
                                     </button>
-                                </h5>
-                            </div>
-                            <div id="collapseSix " class="collapse " aria-labelledby="headingSix " data-parent="#accordion ">
-                                <div class="card-body row col-sm-4 dark-mode ">
-                                    <iframe class="img-responsive " style="width:70% " alt="video " src="https://www.youtube.com/embed/SCVCLChPQFY "></iframe>
-                                    <p>The Back Squat</p>
+                                    </h5>
+                                </div>
+                                <div id="collapseSix " class="collapse " aria-labelledby="headingSix " data-parent="#accordion ">
+                                    <div class="card-body row col-sm-4 dark-mode ">
+                                        <iframe class="img-responsive " style="width:70% " alt="video " src="https://www.youtube.com/embed/SCVCLChPQFY "></iframe>
+                                        <p>The Back Squat</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!---------------------------------------------------------FIND US MAP---------------------------------------------->
+            </section>
+            <!---------------------------------------------------------FIND US MAP---------------------------------------------->
 
-        <section id="find-us " class="card dark-mode mt-3 ">
-            <h1> FIND US!</h1>
-            <div class="row ">
-                <iframe class="ml-3 col-sm " src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13217.164636514206!2d-118.28774264999998!3d34.087680899999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1650064196295!5m2!1sen!2sus
-                " style="border:0 "
-                    height="auto " width="auto " allowfullscreen="false " loading="lazy " referrerpolicy="no-referrer-when-downgrade "></iframe>
-                <div class="col-sm m-auto ">
-                    <ul class="location ">
-                        <li><i class="fa-solid fa-location-dot "></i>Address: 123 GymBeast Street, Los Angeles, CA 90046</li>
-                        <li><i class="fa-solid fa-phone "></i>Phone Number: 123-GYM-BEST</li>
-                        <li><i class="fa-solid fa-envelope "></i>Customer Service Email: CstmrSrvc@GymBeast.com</li>
-                    </ul>
+            <section id="find-us " class="card dark-mode mt-5 ">
+                <h1 class="mt-3 mb-3 "> FIND US!</h1>
+                <div class="row ">
+                    <iframe class="ml-3 col-sm " src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13217.164636514206!2d-118.28774264999998!3d34.087680899999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1650064196295!5m2!1sen!2sus
+                " style="border:0 " height="auto " width="auto " allowfullscreen="false " loading="lazy " referrerpolicy="no-referrer-when-downgrade "></iframe>
+                    <div class="col-sm m-auto ">
+                        <ul class="location mt-3 ">
+                            <li><i class="fa-solid fa-location-dot "></i>Address: 123 GymBeast Street, Los Angeles, CA 90046</li>
+                            <li><i class="fa-solid fa-phone "></i>Phone Number: 123-GYM-BEST</li>
+                            <li><i class="fa-solid fa-envelope "></i>Customer Service Email: CstmrSrvc@GymBeast.com</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            </div>
-            <div class="flex ">
-                <h1> Follow US!</h1>
+        </div>
 
-                <ul id="social-media ">
-                    <li><i class="fa-brands fa-facebook "></i></li>
-                    <li><i class="fa-brands fa-twitter "></i></li>
-                    <li><i class="fa-brands fa-instagram "></i></li>
-                    <li><i class="fa-brands fa-snapchat "></i></li>
-                    <li><i class="fa-brands fa-tiktok "></i></li>
-                </ul>
-            </div>
-            </div>
-            </div>
+        <h1 class="mt-5 ">Follow US!</h1>
+        <ul id="social-media " class="list-unstyled mt-1 mb-5 row ">
+            <li class="col-2 "><i class="fa-brands fa-facebook "></i></li>
+            <li class="col-2 "><i class="fa-brands fa-twitter "></i></li>
+            <li class="col-2 "><i class="fa-brands fa-instagram "></i></li>
+            <li class="col-2 "><i class="fa-brands fa-snapchat "></i></li>
+            <li class="col-2 "><i class="fa-brands fa-tiktok "></i></li>
+        </ul>
+
         </section>
-
         <!----------------------------------------------------JOIN FORM------------------------------------------------->
-        <section id="join-form " class="card mt-5 mb-5 m-auto w-75 justify-content-center ">
-            <div class="dark-mode ">
-                <h1>JOIN US!</h1>
-                <form action="POST " class="dark-mode " id="join ">
-                    <input class="dark-mode " type="text " placeholder="First Name ">
-                    <input class="dark-mode " type="text " placeholder="Last Name ">
-                    <input class="dark-mode " type="text " placeholder="Email Address ">
-                    <textarea style="resize:none; " class="dark-mode " name="Your Message " cols="4 " rows="4 " placeholder="Your Message "></textarea>
-                </form>
-            </div>
+        <section>
+            <form>
+                <div class="form-row ">
+                    <div class="col-md-4 mb-3 ">
+                        <label for="validationDefault01 ">First name</label>
+                        <input type="text " class="form-control " id="validationDefault01 " placeholder="First name " value="Mark " required>
+                    </div>
+                    <div class="col-md-4 mb-3 ">
+                        <label for="validationDefault02 ">Last name</label>
+                        <input type="text " class="form-control " id="validationDefault02 " placeholder="Last name " value="Otto " required>
+                    </div>
+                    <div class="col-md-4 mb-3 ">
+                        <label for="validationDefault03 ">Email Address</label>
+                        <input type="text " class="form-control " id="validationDefault03 " placeholder="Email Address " value="mark.otto@email.com " required>
+                    </div>
+                </div>
+                <div class="form-group ">
+                    <div class="form-check ">
+                        <input class="form-check-input " type="checkbox " value=" " id="invalidCheck2 " required>
+                        <label class="form-check-label " for="invalidCheck2 ">
+                      Agree to terms and conditions
+                    </label>
+                    </div>
+                </div>
+                <button class="btn btn-primary " type="submit ">Submit form</button>
+            </form>
         </section>
         <!----------------------------------------------------BMI CALCULATORe------------------------------------------------->
 

@@ -1,12 +1,3 @@
-require({ Notifier });
-'@airbrake/browser';
-
-const airbrake = new Notifier({
-    projectId: 416002,
-    projectKey: '8b2b2ec00750a0716a30ef9dc27e7cd0',
-    environment: 'production'
-});
-
 window.onscroll = function() { scrollFunction() };
 
 function scrollFunction() {
@@ -19,6 +10,7 @@ function scrollFunction() {
 
 function darkMode() {
     let elements = document.querySelectorAll('.dark-mode');
-    elements4
+    elements
 
 }
+$('#carouselOne').carousel();

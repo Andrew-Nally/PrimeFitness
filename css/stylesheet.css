@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@200;800&family=Prata&display=swap');
+html,
+* {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    margin: 0 auto;
+    text-align: center;
+}
+
+main {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+#navbar {
+    top: -50%;
+    background: transparent;
+    width: 100%;
+    transition: top 0.3s;
+    left: 60%;
+    z-index: 20;
+}
+
+#navbar a,
+.PRIME-title-btn {
+    float: left;
+    display: block;
+    color: rgba(151, 142, 24, 0.931);
+    text-align: center;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 200;
+    text-shadow: 1px 1px 1px #000;
+    font-size: 12PX;
+    padding: 8px;
+    margin-right: 5px;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(155, 146, 25, 0.935);
+}
+
+#navbar a:hover,
+.PRIME-title-btn:hover {
+    transform: scale(1.2);
+    color: black;
+    border-bottom: 1px solid black;
+    text-shadow: 1px 1px 1px #FFF;
+    transition: bottom .3s;
+}
+
+.header {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 200;
+    letter-spacing: 2px;
+    transition: .3s;
+    bottom: 0;
+    right: 0%;
+    height: 10vh;
+    position: sticky;
+    margin-bottom: -20%;
+    background: transparent;
+    z-index: 10;
+}
+
+.header span {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    color: #111;
+    letter-spacing: 5px;
+}
+
+.header:hover {
+    color: rgba(147, 139, 27, 0.98);
+    text-shadow: 5px 5px 7px rgba(255, 255, 255, 0.851);
+    transition: .7s;
+}
+
+.header span:hover {
+    transform: scaleX(none);
+    text-shadow: 2px 2px 4px #fff;
+}
+
+.carousel video {
+    min-height: 100vh;
+    min-width: 100vw;
+    margin: 0 auto;
+    display: block;
+    background-color: #000;
+    transition: .3s;
+    object-fit: cover;
+}
+
+.vid1 {
+    opacity: .5;
+}
+
+.vid2 {
+    opacity: .2;
+}
+
+.vid3 {
+    opacity: .2;
+}
+
+.vid4 {
+    opacity: .2;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: .5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.carousel .carousel-indicators li {
+    background-color: black;
+}
+
+#video {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    position: sticky;
+    opacity: .5;
+    margin-top: -100%;
+    z-index: -10;
+    left: 0%;
+}
+
+video {
+    min-height: 100vh;
+    min-width: 100vw;
+    overflow: hidden;
+    object-fit: contain;
+    opacity: .4;
+}
+
+#membership-body {
+    padding: 2px 0;
+    overflow: visible;
+    position: relative;
+    margin-top: 50%;
+    z-index: 1;
+    height: 100vh;
+}
+
+.membership-content {
+    transform: translateY(0%);
+    margin-bottom: 10%;
+}
+
+@media only screen and (max-width: 720px) {
+    #membership-body div {
+        max-width: 100%;
+        min-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .card-body .list-unstyled {
+        display: none;
+    }
+}
+
+#workout-body {
+    margin-top: 30%;
+    margin-bottom: 10%;
+}
+
+#find-us {
+    margin-top: 10%;
+}
+
+.location {
+    margin-top: 5%;
+    font-size: .85em;
+    list-style: none;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+    width: 100%;
+    border: 5px solid red;
+    margin-top: 10%;
+}
+
+@keyframes overlay {
+    30% {
+        left: 0;
+        width: 50%;
+    }
+    50% {
+        background: #00f;
+    }
+    80% {
+        left: 80%;
+        width: 20%;
+    }
+    100% {
+        left: 60%;
+        width: 40%;
+        background: #00f;
+    }
+}
+
+body {
+    text-align: center;
+}
+
+figure#fashion {
+    display: inline-block;
+    position: relative;
+    font-size: 0;
+    margin: 0;
+}
+
+figure#fashion video {
+    width: 100%;
+}
+
+figure#fashion div {
+    width: 10%;
+    height: 100%;
+    background: #f00;
+    position: absolute;
+    top: 0;
+    mix-blend-mode: multiply;
+    pointer-events: none;
+    left: 0;
+}
+
+video.playing~div#vid-cover {
+    animation: overlay 10s forwards;
+}
+
+figure#fashion video.playing~figcaption {
+    opacity: 1;
+}
+
+figure#fashion figcaption {
+    font-size: 50px;
+    font-family: Avenir;
+    color: white;
+    position: absolute;
+    width: 40%;
+    right: 0;
+    top: 30%;
+    text-transform: uppercase;
+    text-align: center;
+    opacity: 0;
+    transition: 3s 9s opacity;
+}
+
+figure#fashion figcaption span {
+    font-size: 40px;
+    text-transform: lowercase;
+    display: block;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    font-size: 1.2rem;
+}
